@@ -17,49 +17,17 @@ void main(){
   Book book7 =Book(author: 'Rakib Hasan', title: 'Tin Goyenda', publicationYear:1985);
   book7.read(250);
   
-  //Book1
-  print("Book 1 : ${book1.getTitle()} by ${book1.getAuthor()}");
-  print("Published in : ${book1.getPublicationYear()}");
-  print("Pages read : ${book1.getPagesRead()}");
-  print("Book age : ${book1.getBookAge()} years\n");
+  List<Book> Books=[book1,book2,book3,book4,book5,book6,book7];
+  for(Book book in Books ){
+    print("Title : ${book.getTitle()} by ${book.getAuthor()}");
+    print("Published in : ${book.getPublicationYear()}");
+    print("Pages read : ${book.getPagesRead()}");
+    print("Book age : ${book.getBookAge()} years\n");
 
-  //Book2
-  print("Book 2 : ${book2.getTitle()} by ${book2.getAuthor()}");
-  print("Published in : ${book2.getPublicationYear()}");
-  print("Pages read : ${book2.getPagesRead()}");
-  print("Book age : ${book2.getBookAge()} years\n");
-
-  //Book3
-  print("Book 3 : ${book3.getTitle()} by ${book3.getAuthor()}");
-  print("Published in : ${book3.getPublicationYear()}");
-  print("Pages read : ${book3.getPagesRead()}");
-  print("Book age : ${book3.getBookAge()} years\n");
-
-  //Book4
-  print("Book 4 : ${book4.getTitle()} by ${book4.getAuthor()}");
-  print("Published in : ${book4.getPublicationYear()}");
-  print("Pages read : ${book4.getPagesRead()}");
-  print("Book age : ${book4.getBookAge()} years\n");
-
-  //Book5
-  print("Book 5 : ${book5.getTitle()} by ${book5.getAuthor()}");
-  print("Published in : ${book5.getPublicationYear()}");
-  print("Pages read : ${book5.getPagesRead()}");
-  print("Book age : ${book5.getBookAge()} years\n");
-
-  //Book6
-  print("Book 6 : ${book6.getTitle()} by ${book6.getAuthor()}");
-  print("Published in : ${book6.getPublicationYear()}");
-  print("Pages read : ${book6.getPagesRead()}");
-  print("Book age : ${book6.getBookAge()} years\n");
-
-  //Book7
-  print("Book 7 : ${book7.getTitle()} by ${book7.getAuthor()}");
-  print("Published in : ${book7.getPublicationYear()}");
-  print("Pages read : ${book7.getPagesRead()}");
-  print("Book age : ${book7.getBookAge()} years\n");
-
+  }
   //Book Object Created
   print("Total number of Book objects created: ${Book.totalBooks}");
 }
+
+
 
